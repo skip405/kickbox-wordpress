@@ -1,0 +1,23 @@
+{
+    "name": "skip405/kickbox-wordpress",
+    "description": "This package provides email verification via Kickbox using WordPress HTTP-requests functions. Ideal if you want to employ Kickbox functionality in a WordPress plugin or theme.",
+    "license": "MIT",
+    "keywords": ["kickbox", "wordpress", "email verification"],
+    "autoload": {
+        "psr-4": {
+            "Skip405\\KickboxWordPress\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "skip405",
+            "email": "skip405@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "2.*"
+    }
+}
