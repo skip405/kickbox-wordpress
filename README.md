@@ -19,7 +19,7 @@ composer require skip405/kickbox-wordpress
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
-$client = new Skip405\Kickbox\Client( "KICKBOX_API_KEY" );
+$client = new Skip405\Kickbox\WordPress\Client( "KICKBOX_API_KEY" );
 
 $verified_email = $client->verify( "jane.doe@example.com" );
 ```
@@ -31,7 +31,7 @@ In the example above `$verified_email` will be an associative array with `succes
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
-$client = new Skip405\Kickbox\Client( "KICKBOX_API_KEY" );
+$client = new Skip405\Kickbox\WordPress\Client( "KICKBOX_API_KEY" );
 
 $batch = $client->verify_batch(
     array( "jane.doe@example.com", "john.doe@example.com" ),
@@ -46,7 +46,7 @@ In the example above `$batch` will be an associative array with `success` and `d
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
-$client = new Skip405\Kickbox\Client( "KICKBOX_API_KEY" );
+$client = new Skip405\Kickbox\WordPress\Client( "KICKBOX_API_KEY" );
 
 $batch = $client->verify_batch(
     array( "jane.doe@example.com", "john.doe@example.com" ),
