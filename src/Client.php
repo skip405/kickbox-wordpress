@@ -1,6 +1,6 @@
 <?php
 
-namespace Skip405\KickboxWordPress;
+namespace Skip405\Kickbox\WordPress;
 
 /**
  * Kickbox API client using WordPress request functions

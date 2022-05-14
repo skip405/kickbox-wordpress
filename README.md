@@ -1,6 +1,6 @@
 # Kickbox Verifications using WordPress request functions
 
-This package implements a Kickbox API-client using WordPress request functions.
+This package provides a Kickbox Email Verification API-client that uses WordPress HTTP-requests functions. Ideal if you want to employ Kickbox email verification in a WordPress plugin or theme.
 
 ## Installation
 Install via composer:
