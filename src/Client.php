@@ -126,6 +126,7 @@ class Client {
 					'method'  => 'PUT',
 					'headers' => $headers,
 					'body'    => join( "\n", $emails ),
+					'timeout' => 6,
 				)
 			)
 		);
@@ -177,7 +178,8 @@ class Client {
 			add_query_arg(
 				array( 'apikey' => $this->api_key ),
 				self::API_ENDPOINT . '/verify-batch/' . $job_id
-			)
+			),
+			apply_filters( self::HOOKS_NAMESPACE . '_batch_check_call_args', array( 'timeout' => 6 ) )
 		);
 
 		if ( is_wp_error( $response ) ) {
