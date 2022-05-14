@@ -15,9 +15,14 @@
         }
     ],
     "require": {
+        "php": ">=7.0",
         "ext-json": "*"
     },
     "require-dev": {
         "wp-coding-standards/wpcs": "2.*"
+    },
+    "support": {
+        "email": "skip405@gmail.com",
+        "issues": "https://github.com/skip405/kickbox-wordpress/issues"
     }
 }
