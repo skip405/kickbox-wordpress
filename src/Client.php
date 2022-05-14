@@ -139,11 +139,21 @@ class Client {
 				)
 			);
 		} else {
+			$response_headers = wp_remote_retrieve_headers( $response );
+
+			if ( ! empty( $response_headers ) ) {
+				$response_headers = $response_headers->getAll();
+			}
+
 			$verification = apply_filters(
 				self::HOOKS_NAMESPACE . '_batch_verification_success',
 				array(
 					'success' => true,
-					'data'    => $response,
+					'data'    => array(
+						'code'    => wp_remote_retrieve_response_code( $response ),
+						'body'    => json_decode( wp_remote_retrieve_body( $response ), true ),
+						'headers' => $response_headers,
+					),
 				)
 			);
 		}
@@ -179,11 +189,21 @@ class Client {
 				)
 			);
 		} else {
+			$response_headers = wp_remote_retrieve_headers( $response );
+
+			if ( ! empty( $response_headers ) ) {
+				$response_headers = $response_headers->getAll();
+			}
+
 			$check = apply_filters(
 				self::HOOKS_NAMESPACE . '_batch_check_success',
 				array(
 					'success' => true,
-					'data'    => $response,
+					'data'    => array(
+						'code'    => wp_remote_retrieve_response_code( $response ),
+						'body'    => json_decode( wp_remote_retrieve_body( $response ), true ),
+						'headers' => $response_headers,
+					),
 				)
 			);
 		}
