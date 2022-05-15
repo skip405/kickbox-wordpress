@@ -82,7 +82,7 @@ Array
 )
 ```
 
-Successful requests return an associative array with `success` being `true` and `data` being and array with `code`, `body` and `headers` properties. `body` contains the response from Kickbox.
+Successful requests return an associative array with `success` being `true` and `data` being an array with `code`, `body` and `headers` properties. `body` contains the response from Kickbox.
 
 ### Successful email verification response
 
@@ -170,3 +170,7 @@ Array
 )
 
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
