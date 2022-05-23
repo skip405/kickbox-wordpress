@@ -24,7 +24,7 @@ $client = new Skip405\Kickbox\WordPress\Client( "KICKBOX_API_KEY" );
 $verified_email = $client->verify( "jane.doe@example.com" );
 ```
 
-In the example above `$verified_email` will be an associative array with `success` and `data` properties. See [response examples](#response-examples) below.
+See [response examples](#response-examples) below.
 
 ### Batch verification
 ```
@@ -39,7 +39,7 @@ $batch = $client->verify_batch(
 );
 ```
 
-In the example above `$batch` will be an associative array with `success` and `data` properties. See [response examples](#response-examples) below.
+See [response examples](#response-examples) below.
 
 ### Check batch verification status
 ```
@@ -56,7 +56,7 @@ $batch = $client->verify_batch(
 $batch_status = $client->check_batch( $batch['data']['body']['id'] );
 ```
 
-In the example above `$batch_status` will be an associative array with `success` and `data` properties. See response examples below.
+See response examples below.
 
 ## Response examples
 
