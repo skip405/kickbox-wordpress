@@ -56,7 +56,7 @@ $batch = $client->verify_batch(
 $batch_status = $client->check_batch( $batch['data']['body']['id'] );
 ```
 
-See [response examples](wiki/Response-examples) wiki.
+See [response examples](/wiki/Response-examples) wiki.
 
 ## License
 
