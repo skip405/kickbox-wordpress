@@ -24,7 +24,7 @@ $client = new Skip405\Kickbox\WordPress\Client( "KICKBOX_API_KEY" );
 $verified_email = $client->verify( "jane.doe@example.com" );
 ```
 
-See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) wiki.
+See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) in the wiki.
 
 ### Batch verification
 ```
@@ -39,7 +39,7 @@ $batch = $client->verify_batch(
 );
 ```
 
-See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) wiki.
+See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) in the wiki.
 
 ### Check batch verification status
 ```
@@ -56,7 +56,7 @@ $batch = $client->verify_batch(
 $batch_status = $client->check_batch( $batch['data']['body']['id'] );
 ```
 
-See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) wiki.
+See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) in the wiki.
 
 ## License
 
