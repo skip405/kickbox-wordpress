@@ -6,16 +6,18 @@
 This package provides a Kickbox Email Verification API-client that uses WordPress HTTP-requests functions. Ideal if you want to employ Kickbox email verification in a WordPress plugin or theme.
 
 ## Installation
+
 Install via composer:
 
-```
+```php
 composer require skip405/kickbox-wordpress
 ```
 
 ## Examples
 
 ### Verify a single email address
-```
+
+```php
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
@@ -27,7 +29,8 @@ $verified_email = $client->verify( "jane.doe@example.com" );
 See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) in the wiki.
 
 ### Batch verification
-```
+
+```php
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
@@ -42,7 +45,8 @@ $batch = $client->verify_batch(
 See [response examples](https://github.com/skip405/kickbox-wordpress/wiki/Response-examples) in the wiki.
 
 ### Check batch verification status
-```
+
+```php
 // include your composer dependencies
 require_once 'vendor/autoload.php';
 
